@@ -1,20 +1,79 @@
 :root {
   --light-cyan: hsl(193, 38%, 86%);
   --neon-green: hsl(150, 100%, 66%);
+  --neon-green-trans: hsla(150, 100%, 66%, 0.8);
   --grayish-blue: hsl(217, 19%, 38%);
   --dark-grayish-blue: hsl(217, 19%, 24%);
   --dark-blue: hsl(218, 23%, 16%);
 }
 
 body {
-  background-color: var(--dark-blue)
+  background-color: var(--dark-blue);
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
 }
 
 h1 {
   color: white;
   font-size: 28px;
+  font-weight: lighter;
+  padding-bottom: 15px;
 }
 
 p {
-  color: var(--neon-green)
+  color: var(--neon-green);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.advice-wrapper {
+  width: 80vh;
+  background-color: var(--dark-grayish-blue);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.advice-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 40px 70px 40px;
+}
+
+.advice-button {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: var(--neon-green);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 0 30px var(--neon-green-trans);
+  transition: 0.5s ease-out;
 }

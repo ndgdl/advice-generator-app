@@ -5,27 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Advice generator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center; color: white; }
+    .attribution a { color: hsl(228, 28%, 51%); }
   </style>
 </head>
 <body>
   <script type="text/javascript" src="fetch.js"></script>
-  <div class="advice-wrapper">
-    <p>Advice #<span id="advice-id"></span> </p>
 
-    <h1 id="advice-content"> </h1>
-  </div>
+  <div class="container">
+    <div class="advice-wrapper">
+      <div class="advice-content">
+        <p>Advice #<span id="advice-id"></span> </p>
+
+        <h1>"<span id="advice-content"></span>"</h1>
+        <img src="images/pattern-divider-desktop.svg">
+      </div> <!-- advice-content -->
+
+      <div class="advice-button">
+        <button id="shuffle">
+          <img src="images/icon-dice.svg" alt="Get a random quote!">
+        </button>
+      </div> <!-- advice-button -->
+
+    </div> <!-- advice-wrapper -->
+
+  </div> <!-- container -->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">ndgdl</a>.
+  </div> <!-- attribution -->
 </body>
 </html>

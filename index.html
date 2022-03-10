@@ -28,7 +28,7 @@
 <body>
   <script type="text/javascript" src="fetch.js"></script>
 
-  <div class="container">
+  <main role="main" class="container">
     <div class="advice-wrapper">
       <div class="advice-content">
         <p>Advice #<span id="advice-id"></span> </p>
@@ -37,24 +37,24 @@
         <picture>
           <source media="(max-width: 375px)" srcset="images/pattern-divider-mobile.svg">
           <source media="(max-width: 1440px)" srcset="images/pattern-divider-desktop.svg">
-          <img src="images/pattern-divider-desktop.svg">
+          <img src="images/pattern-divider-desktop.svg" alt="divider">
         </picture>
       </div> <!-- advice-content -->
 
       <div class="advice-button">
         <button id="shuffle">
-          <img id="dice" class="" src="images/icon-dice.svg" alt="Get a random quote!">
+          <img id="dice" class="" src="images/icon-dice.svg" alt="get a random quote">
         </button>
       </div> <!-- advice-button -->
 
     </div> <!-- advice-wrapper -->
 
-    <div class="attribution">
+    <div role="contentinfo" class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://github.com/ndgdl">ndgdl</a>.
     </div> <!-- attribution -->
 
-  </div> <!-- container -->
+  </main> <!-- container -->
 
 </body>
 </html>

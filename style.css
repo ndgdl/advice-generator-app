@@ -58,7 +58,6 @@ p {
   }
 }
 
-
 .advice-button {
   position: absolute;
   bottom: -30px;
@@ -96,4 +95,20 @@ button:hover {
 button:active {
   box-shadow: 0 0 15px var(--neon-green-trans);
   transform: translateY(6px);
+}
+
+.spin {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

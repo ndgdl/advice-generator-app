@@ -38,7 +38,7 @@ p {
 }
 
 .advice-wrapper {
-  width: fit-content;
+  width: 500px;
   background-color: var(--dark-grayish-blue);
   position: relative;
   display: flex;
@@ -53,6 +53,10 @@ p {
 }
 
 @media(max-width: 375px) {
+  .advice-wrapper {
+    width: 350px;
+  }
+
   .advice-content {
     padding: 40px 10px 60px 10px;
   }

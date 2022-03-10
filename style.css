@@ -34,7 +34,6 @@ p {
 }
 
 .advice-wrapper {
-  width: 80vh;
   background-color: var(--dark-grayish-blue);
   position: relative;
   display: flex;
@@ -43,6 +42,18 @@ p {
   border-radius: 15px;
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
+
+@media(max-width: 1440px) {
+  .advice-wrapper {
+    width: 80vh;
+  }
+}
+@media(max-width: 375px) {
+  .advice-wrapper {
+    width: 45vh;
+  }
+}
+
 
 .advice-content {
   display: flex;
@@ -69,11 +80,22 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: none;
-  transition: box-shadow 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.disabled {
+  pointer-events: none;
+  background-color: lightgray;
+  opacity: 0.3;
 }
 
 button:hover {
   box-shadow: 0 0 30px var(--neon-green-trans);
-  transition: 0.5s ease-out;
+  transform: scale(1.10);
+  transition: all 0.5s ease-out;
+}
+
+button:active {
+  box-shadow: 0 0 15px var(--neon-green-trans);
+  transform: translateY(6px);
 }

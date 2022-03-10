@@ -27,7 +27,11 @@
         <p>Advice #<span id="advice-id"></span> </p>
 
         <h1>"<span id="advice-content"></span>"</h1>
-        <img src="images/pattern-divider-desktop.svg">
+        <picture>
+          <source media="(max-width: 375px)" srcset="images/pattern-divider-mobile.svg">
+          <source media="(max-width: 1440px)" srcset="images/pattern-divider-desktop.svg">
+          <img src="images/pattern-divider-desktop.svg">
+        </picture>
       </div> <!-- advice-content -->
 
       <div class="advice-button">

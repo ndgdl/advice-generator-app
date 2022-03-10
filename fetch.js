@@ -10,7 +10,5 @@ const fetchApi = () => {
 window.addEventListener('load', function() {
   fetchApi();
   const button = this.document.getElementById("shuffle");
-  button.addEventListener('click', function() {
-    fetchApi();
-    this })
+  button.addEventListener('click', function() { fetchApi() })
 })

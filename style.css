@@ -14,16 +14,19 @@ body {
 }
 
 h1 {
-  color: white;
+  color: var(--light-cyan);
   font-size: 28px;
-  font-weight: lighter;
+  font-weight: 600;
   padding-bottom: 15px;
 }
 
 p {
   color: var(--neon-green);
   text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
   letter-spacing: 5px;
+  padding-bottom: 15px;
 }
 
 .container {
@@ -35,6 +38,7 @@ p {
 }
 
 .advice-wrapper {
+  width: 70vh;
   background-color: var(--dark-grayish-blue);
   position: relative;
   display: flex;
@@ -44,28 +48,23 @@ p {
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
 
-@media(max-width: 1440px) {
-  .advice-wrapper {
-    width: 80vh;
-  }
+.advice-content {
+  padding: 40px 40px 60px 40px;
 }
+
 @media(max-width: 375px) {
   .advice-wrapper {
-    width: 45vh;
+    width: 40vh;
+  }
+  .advice-content {
+    padding: 40px 10px 60px 10px;
   }
 }
 
-
-.advice-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 25px 40px 70px 40px;
-}
 
 .advice-button {
   position: absolute;
-  bottom: -10%;
+  bottom: -30px;
   left: 0;
   width: 100%;
   display: flex;

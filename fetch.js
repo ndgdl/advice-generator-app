@@ -16,8 +16,10 @@ window.addEventListener('load', function() {
 
     fetchApi();
     dice.classList.add("spin");
+    this.classList.add("disabled");
     setTimeout(() => {
       dice.classList.remove("spin");
+      this.classList.remove("disabled");
     }, 1000);
   })
 })

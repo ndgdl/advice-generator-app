@@ -14,7 +14,14 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; color: white; }
+    .attribution {
+      position: absolute;
+      bottom: 1%;
+      left: 70%;
+      font-size: 11px;
+      text-align: center;
+      color: white;
+                  }
     .attribution a { color: hsl(228, 28%, 51%); }
   </style>
 </head>
@@ -35,18 +42,19 @@
       </div> <!-- advice-content -->
 
       <div class="advice-button">
-        <button id="shuffle">
+        <button id="shuffle" class="disabled">
           <img src="images/icon-dice.svg" alt="Get a random quote!">
         </button>
       </div> <!-- advice-button -->
 
     </div> <!-- advice-wrapper -->
 
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/ndgdl">ndgdl</a>.
+    </div> <!-- attribution -->
+
   </div> <!-- container -->
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">ndgdl</a>.
-  </div> <!-- attribution -->
 </body>
 </html>

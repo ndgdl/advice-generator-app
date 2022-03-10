@@ -31,6 +31,7 @@ p {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative;
 }
 
 .advice-wrapper {
@@ -87,6 +88,7 @@ button {
   pointer-events: none;
   background-color: lightgray;
   opacity: 0.3;
+  transition: all 0.5 ease;
 }
 
 button:hover {

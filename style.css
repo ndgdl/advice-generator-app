@@ -54,7 +54,7 @@ p {
 
 @media(max-width: 375px) {
   .advice-wrapper {
-    width: 40vh;
+    width: 95%;
   }
   .advice-content {
     padding: 40px 10px 60px 10px;
